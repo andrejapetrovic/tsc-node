@@ -5,7 +5,7 @@ import { dbconfig } from './database.config';
 
 const path = require('path');
 export const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 app.use(express.json());
 app.use(express.static(__dirname + "/ngrx"));
 

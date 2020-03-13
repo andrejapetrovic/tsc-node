@@ -45,7 +45,7 @@ var typeorm_1 = require("typeorm");
 var database_config_1 = require("./database.config");
 var path = require('path');
 exports.app = express_1.default();
-var port = 4000;
+var port = process.env.PORT || 4000;
 exports.app.use(express_1.default.json());
 exports.app.use(express_1.default.static(__dirname + "/ngrx"));
 /*

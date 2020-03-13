@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc",
     "start": "tsc && node ./dist/app.js",
-	"start2": "tsc && cp -r ~/Projects/angular-ngrx/dist/ngrx ~/Projects/tsc-node/dist && node ./dist/app.js"
+    "start2": "tsc && cp -r ~/Projects/angular-ngrx/dist/ngrx ~/Projects/tsc-node/dist && node -r dotenv/config ./dist/app.js"
   },
   "author": "Andreja Petrovic",
   "license": "ISC",
@@ -17,5 +17,8 @@
     "pg": "^7.11.0",
     "typeorm": "^0.2.17",
     "typescript": "^3.5.1"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
   }
 }

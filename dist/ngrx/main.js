@@ -568,7 +568,7 @@ var DriversComponent = /** @class */ (function () {
         this.refresh();
         this.drivers$ = this.store.select(_reducers_drivers_reducer__WEBPACK_IMPORTED_MODULE_5__["selectAll"]);
         this.driversForm = this.fb.group({
-            name: 'npr',
+            name: 'New Driver',
             country: 'srb',
             points: '9001',
         });
@@ -654,7 +654,7 @@ var TeamsComponent = /** @class */ (function () {
         this.teamlessDrivers$ = this.store.select(_reducers_drivers_reducer__WEBPACK_IMPORTED_MODULE_7__["selectAll"])
             .pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_2__["map"])(function (driver) { return driver.filter(function (d) { return !d.team; }); }));
         this.teamsForm = this.fb.group({
-            name: 'Aki',
+            name: 'New Team',
             country: 'srb',
             championshipTitles: '9001',
             podiumFinishes: '10000'
@@ -1074,7 +1074,7 @@ __webpack_require__.r(__webpack_exports__);
 var DriversService = /** @class */ (function () {
     function DriversService(http) {
         this.http = http;
-        this.url = 'http://localhost:4000/';
+        this.url = '/';
     }
     DriversService.prototype.get = function () {
         return this.http.get(this.url + 'drivers');
@@ -1120,7 +1120,7 @@ __webpack_require__.r(__webpack_exports__);
 var TeamsService = /** @class */ (function () {
     function TeamsService(http) {
         this.http = http;
-        this.url = 'http://localhost:4000/';
+        this.url = '/';
     }
     TeamsService.prototype.get = function () {
         return this.http.get(this.url + 'teams');

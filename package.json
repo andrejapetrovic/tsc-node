@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc",
-    "start": "tsc && node ./dist/app.js",
-    "start2": "tsc && cp -r ~/Projects/angular-ngrx/dist/ngrx ~/Projects/tsc-node/dist && node -r dotenv/config ./dist/app.js"
+    "start3": "tsc && node ./dist/app.js",
+    "start2": "tsc && cp -r ~/Projects/angular-ngrx/dist/ngrx ~/Projects/tsc-node/dist && node -r dotenv/config ./dist/app.js",
+    "start": "tsc && cp -r ngrx ./dist && node -r dotenv/config ./dist/app.js"
   },
   "author": "Andreja Petrovic",
   "license": "ISC",

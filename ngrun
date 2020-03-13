@@ -1,4 +1,0 @@
-#!/bin/sh
-
-node $HOME/Projects/tsc-node/dist/app.js
-
